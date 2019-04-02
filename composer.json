@@ -1,0 +1,41 @@
+{
+    "name": "alzen8work/userassistant",
+    "description": ":description",
+    "license": "MIT License",
+    "authors": [{
+        "name": "alzen8work",
+        "email": "alzen8work@gmail.com",
+        "homepage": "https://bagless.space"
+    }],
+    "homepage": "https://github.com/alzen8work/lrv-user-setup",
+    "keywords": ["Laravel", "UserAssistant"],
+    "require": {
+        "illuminate/support": "~5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3.0",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "alzen8work\\UserAssistant\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "alzen8work\\UserAssistant\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "alzen8work\\UserAssistant\\UserAssistantServiceProvider"
+            ],
+            "aliases": {
+                "UserAssistant": "alzen8work\\UserAssistant\\Facades\\UserAssistant"
+            }
+        }
+    }
+}
